@@ -1,7 +1,8 @@
 # Open Banking
 
-## 2
+## Configuración necesaria para interactuar con APIs de Open Bank Project
 
-hola mundo
+A fin de hacer uso de las APIs de open bank project se requiere hacer una configuracion inicial. A continuacion se define la configuracion necesaria:
 
+1. Ingresar en [openbankproject.com/](https://apisandbox.openbankproject.com/ "Open Bank Project")
 
