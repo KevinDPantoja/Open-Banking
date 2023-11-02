@@ -96,6 +96,8 @@ Ya teniendo ese rol podemos proceder a hacer la creacion de un banco usando las 
 
 Veamos la forma de hacerlo en Postman:
 
+1) Procedemos a configurar el Header:
+
   
 
 
