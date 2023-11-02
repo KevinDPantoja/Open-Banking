@@ -87,6 +87,18 @@ Luego de eso es cuestion de esperar la respuesta de alguno de los asesores ya qu
 ![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/686d0748-64a1-4144-bf82-b66a5e34234d)
 
 
+Ya teniendo ese rol podemos proceder a hacer la creacion de un banco usando las APIs de Open Bank Project. Hay por lo menos dos formas de hacer esto:
+
+* En Postman
+* En la pagina de Open Bank Project
+
+  Veamos la forma de hacerlo en Postman:
+
+  
+
+
+
+
 
 
 
