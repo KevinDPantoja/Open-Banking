@@ -93,7 +93,8 @@ Ya teniendo ese rol podemos proceder a hacer la creacion de un banco usando las 
 * En Postman
 * En la pagina de Open Bank Project
 
-  Veamos la forma de hacerlo en Postman:
+
+Veamos la forma de hacerlo en Postman:
 
   
 
