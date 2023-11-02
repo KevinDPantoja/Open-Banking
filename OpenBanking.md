@@ -31,7 +31,7 @@ Hay por lo menos dos opciones para probar las APIs:
 * Directamente en la pagina de Open Bank Project
 
 
-Si uno desea hacerlo en Postman es necesario autenticarse por medio de la creacion de un token, el cual permite un logueo desde Postman. Pero si vamos a hacer pruebas directament desde la pagina de Postman no hace falta hacer la creacion del token, pues en el momento que uno inicia sesion ya cuenta como un usuario logueado. 
+Si uno desea hacerlo en Postman es necesario autenticarse por medio de la creacion de un token, el cual permite un logueo desde Postman. Pero si vamos a hacer pruebas directamente desde la pagina de Postman no hace falta hacer la creacion del token, pues en el momento que uno inicia sesion ya cuenta como un usuario logueado. 
 
 
 #### **4.1**.  Autenticacion en Postman
@@ -39,6 +39,15 @@ Si uno desea hacerlo en Postman es necesario autenticarse por medio de la creaci
 A la fecha(2/11/2023) en la documentacion aparece esta guia:
 
 ![Authenticate](img/Authenticate.png "Authenticate")
+
+Tenengamos en cuenta que tal como indica la documentacion unicamente se debe ingresar el endpoint POST *https://apisandbox.openbankproject.com/my/logins/direct*  y ingresar los dos parametros Content-Type y directlogin, por lo tanto no hace falta ingresar ningun dato adicional en Params, Authorization( el cual se puede dejar en type como inherith auth from parent), body, pre-request Script, Test, Settings. Si llevamos esto a Postman quedaria de esta forma:
+
+![Authenticate1](Authenticate1.png "Authenticate1")
+
+
+Tenengamos en cuenta que tal como indica la documentacion unicamente se debe ingresar el endpoint POST *https://apisandbox.openbankproject.com/my/logins/direct*  y ingresar los dos parametros Content-Type y directlogin
+
+
 
 
  
