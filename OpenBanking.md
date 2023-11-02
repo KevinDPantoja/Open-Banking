@@ -14,6 +14,11 @@ A fin de hacer uso de las APIs de open bank project se requiere hacer una config
 
 ![GetAPIKey](GetAPIKey.png "GetAPIKey")
 
+Despues de obtener un API Key deberia llegar un correo electronico de confirmacion al correo que se uso para crear la cuenta en Open Bank Project
+
+![ConfirmationEmail](ConfirmationEmail.png "ConfirmationEmail")
+
+
 4. 
 
  
