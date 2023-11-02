@@ -17,7 +17,9 @@ A fin de hacer uso de las APIs de open bank project se requiere hacer una config
 
 Despues de obtener un API Key deberia llegar un correo electronico de confirmacion al correo que se uso para crear la cuenta en Open Bank Project
 
-![ConfirmationEmail](img/ConfirmationEmail.png "ConfirmationEmail")
+
+![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/b6e1936b-33fd-4186-9c78-c70265262862)
+
 
 **IMPORTANTE**, se debe guardar el *Consumer Key* y el *Consumer Secret* en un lugar seguro ya que no va a ser posible volver a conseguirlos despues y por lo tanto habria que borrar la aplicacion y volver a crear otra.
 
