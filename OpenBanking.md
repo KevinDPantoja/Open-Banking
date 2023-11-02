@@ -43,7 +43,7 @@ A la fecha(2/11/2023) en la documentacion aparece esta guia:
 Tenengamos en cuenta que tal como indica la documentacion unicamente se debe ingresar el endpoint POST *https://apisandbox.openbankproject.com/my/logins/direct*  y ingresar los dos parametros Content-Type y directlogin, por lo tanto no hace falta ingresar ningun dato adicional en Params, Authorization( el cual se puede dejar en type como inherith auth from parent), body, pre-request Script, Test, Settings. Si llevamos esto a Postman quedaria de esta forma:
 
 
-![Authenticate1](Authenticate1.png "Authenticate1")
+![Authenticate1](img/Authenticate1.png "Authenticate1")
 
 
 
