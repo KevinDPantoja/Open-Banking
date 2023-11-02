@@ -68,6 +68,15 @@ En el proceso de prueba y error pude ver que lo mas practico a fin de hacer llam
 
 ![CreateBank](img/CreateBank.png "CreateBank")
 
+Con esta API podremos crear un banco y de ahi para adelante sera posible proceder con la creacion de clientes, cuentas, tarjetas y demas productos que estaran vinculados especificamente a ese banco. Sin embargo, un requisito importante para poder crear un banco es tener un rol llamado **CanCreateBank**. Entonces ¿Como se puede obtener ese rol?, 
+una forma de lograrlo  es dirigirnos a la pagina principal de Open Bank Project y buscar la seccion de support:
+
+![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/a1b0890f-5e81-4db3-a2ba-39ba04bdb091)
+
+
+
+
+
 
 
 
