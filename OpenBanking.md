@@ -60,6 +60,12 @@ Despues de ejecutar el request se deberia obtener lo siguiente:
 Este token se usara posteriormente en el llamado de las demas APIs de Open Bank Project en Postman, como se menciono previamente, en caso  de que se hagan pruebas directamente en la pagina de Open Bank Project no sera necesario generar este token pues al iniciar sesion ya se cuenta como un usuario autenticado.
 
 
+### **5**.   Obtener Rol CanCreateBank 
+
+En el proceso de prueba y error pude ver que lo mas practico a fin de hacer llamados 200 era usar un endpoint para crear un banco y luego de crear el banco ya se podia proceder con las demas pruebas de las APIs, actualmente (2/11/2023) Open Bank Project tiene 587 APIs, pero una forma sencilla de empezar es usar la API llamada Create Bank
+
+![CreateBank](img/CreateBank.png "CreateBank")
+
 
 
 
