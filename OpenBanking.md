@@ -18,11 +18,7 @@ Despues de obtener un API Key deberia llegar un correo electronico de confirmaci
 
 ![ConfirmationEmail](ConfirmationEmail.png "ConfirmationEmail")
 
-
-
-<span style="color:orange">orange</span>  
-<span style="color:lime">lime</span>  
-<font color='red'>rojo</font>
+**IMPORTANTE**, se debe guardar el Consumer Key y el Consumer Secret en un lugar seguro ya que no va a ser posible volverlos a conseguirlos despues.
 
 
 **4**. 
