@@ -6,11 +6,11 @@ A fin de hacer uso de las APIs de open bank project se requiere hacer una config
 
 **1**. Ingresar en [openbankproject.com/](https://apisandbox.openbankproject.com/ "Open Bank Project")
    
-2. Crear una cuenta
+**2**. Crear una cuenta
    
 ![Register](Register.png "Register")
 
-3. Obtener un API Key
+**3**. Obtener un API Key
 
 ![GetAPIKey](GetAPIKey.png "GetAPIKey")
 
@@ -18,8 +18,9 @@ Despues de obtener un API Key deberia llegar un correo electronico de confirmaci
 
 ![ConfirmationEmail](ConfirmationEmail.png "ConfirmationEmail")
 
+<span style="color:red">Importante</span>
 
-4. 
+**4**. 
 
  
 
