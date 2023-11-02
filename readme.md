@@ -75,6 +75,13 @@ una forma de lograrlo  es dirigirnos a la pagina principal de Open Bank Project 
 
 
 
+Estando dentro del chat general se puede solicitar ayuda pidiendo a alguno de los asesores que nos permitan tener el rol de **CanCreateBank**
+
+![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/adabbfd5-4771-435e-b8b8-65e016a7d0bb)
+
+
+
+
 
 
 
