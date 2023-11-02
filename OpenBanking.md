@@ -20,6 +20,8 @@ Despues de obtener un API Key deberia llegar un correo electronico de confirmaci
 
 
 
+<span style="color:orange">orange</span>  
+<span style="color:lime">lime</span>  
 <font color='red'>rojo</font>
 
 
