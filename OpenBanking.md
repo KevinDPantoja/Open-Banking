@@ -10,5 +10,11 @@ A fin de hacer uso de las APIs de open bank project se requiere hacer una config
    
 ![Register](Register.png "Register")
 
+3. Obtener un API Key
+
+![GetAPIKey](GetAPIKey.png "GetAPIKey")
+
+4. 
+
  
 
