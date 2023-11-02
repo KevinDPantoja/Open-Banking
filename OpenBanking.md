@@ -24,7 +24,12 @@ Despues de obtener un API Key deberia llegar un correo electronico de confirmaci
 
 ### **4**.   Autenticarse
 
-A fin de 
+Hay por lo menos dos opciones para probar las APIs:
+
+* En Postman
+* Directamente en la pagina de Open Bank Project
+
+Si uno desea hacerlo en Postman es necesario autenticarse por medio de la creacion de un token, el cual permite un logueo desde Postman. Pero si vamos a hacer pruebas directament desde la pagina de Postman no hace falta hacer la creacion del token, pues en el momento que uno inicia sesion ya cuenta como un usuario logueado. 
 
  
 
