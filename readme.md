@@ -49,7 +49,7 @@ Tenengamos en cuenta que tal como indica la documentacion unicamente se debe ing
 
 
 
-Tenengamos en cuenta que este Username y el password son los que se usaron para la creacion de la cuenta ( en el paso 2) de este tutorial) tal como indica la documentacion unicamente se debe ingresar el endpoint POST *https://apisandbox.openbankproject.com/my/logins/direct*  y ingresar los dos parametros Content-Type y directlogin.
+Tengamos en cuenta que este Username y el password son los que se usaron para la creacion de la cuenta ( en el paso 2) de este tutorial) tal como indica la documentacion unicamente se debe ingresar el endpoint POST *https://apisandbox.openbankproject.com/my/logins/direct*  y ingresar los dos parametros Content-Type y directlogin.
 
 #### **4.2**.  Creacion de token
 
