@@ -47,7 +47,25 @@ Tenengamos en cuenta que tal como indica la documentacion unicamente se debe ing
 
 
 
-Tenengamos en cuenta que este Username y el password son los que se usaron para la creacion de la cuenta ( en el paso 2) de este tutorial) tal como indica la documentacion unicamente se debe ingresar el endpoint POST *https://apisandbox.openbankproject.com/my/logins/direct*  y ingresar los dos parametros Content-Type y directlogin
+Tenengamos en cuenta que este Username y el password son los que se usaron para la creacion de la cuenta ( en el paso 2) de este tutorial) tal como indica la documentacion unicamente se debe ingresar el endpoint POST *https://apisandbox.openbankproject.com/my/logins/direct*  y ingresar los dos parametros Content-Type y directlogin.
+
+##### **4.2**.  Creacion de token
+
+Despues de ejecutar el request se deberia obtener lo siguiente:
+
+
+![Token](img/Token.png "Token")
+
+
+Este token se usara posteriormente en el llamado de las demas APIs de Bancolombia en Postman, como se menciono previamente, en caso  de que se hagan pruebas directamente en la pagina de Open Bank Project no sera necesario generar este token pues al iniciar sesion ya se cuenta como un usuario autenticado.
+
+
+
+
+
+
+
+
 
 
 
