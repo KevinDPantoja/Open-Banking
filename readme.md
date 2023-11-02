@@ -81,6 +81,15 @@ Estando dentro del chat general se puede solicitar ayuda pidiendo a alguno de lo
 ![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/adabbfd5-4771-435e-b8b8-65e016a7d0bb)
 
 
+Luego de eso es cuestion de esperar la respuesta de alguno de los asesores ya que sin este rol no es posible proceder con las pruebas pero en el momento que recibimos ese rol, esto se hace evidente al recibir un correo electronico que se ve de esta forma:
+
+
+![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/686d0748-64a1-4144-bf82-b66a5e34234d)
+
+
+
+
+
 
 
 
