@@ -38,7 +38,7 @@ Si uno desea hacerlo en Postman es necesario autenticarse por medio de la creaci
 
 A la fecha(2/11/2023) en la documentacion aparece esta guia:
 
-![Authenticate](Authenticate.png "Authenticate")
+![Authenticate](img/Authenticate.png "Authenticate")
 
 
  
