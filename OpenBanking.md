@@ -36,7 +36,7 @@ Si uno desea hacerlo en Postman es necesario autenticarse por medio de la creaci
 
 #### **4.1**.  Autenticacion en Postman
 
-En la documentacion aparece esta guia:
+A la fecha(2/11/2023) en la documentacion aparece esta guia:
 
 ![Authenticate](Authenticate.png "Authenticate")
 
