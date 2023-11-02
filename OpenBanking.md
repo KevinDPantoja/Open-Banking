@@ -18,7 +18,7 @@ Despues de obtener un API Key deberia llegar un correo electronico de confirmaci
 
 ![ConfirmationEmail](ConfirmationEmail.png "ConfirmationEmail")
 
-<span style="color:red">Importante</span>
+<span style="color:orange">orange</span> 
 
 **4**. 
 
