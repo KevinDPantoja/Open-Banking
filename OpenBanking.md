@@ -19,7 +19,7 @@ Despues de obtener un API Key deberia llegar un correo electronico de confirmaci
 
 ![ConfirmationEmail](ConfirmationEmail.png "ConfirmationEmail")
 
-**IMPORTANTE**, se debe guardar el Consumer Key y el Consumer Secret en un lugar seguro ya que no va a ser posible volver a conseguirlos despues y por lo tanto habria que borrar la aplicacion y volver a crear otra.
+**IMPORTANTE**, se debe guardar el *Consumer Key* y el *Consumer Secret* en un lugar seguro ya que no va a ser posible volver a conseguirlos despues y por lo tanto habria que borrar la aplicacion y volver a crear otra.
 
 
 ### **4**.   Autenticarse
