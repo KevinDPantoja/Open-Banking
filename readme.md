@@ -8,16 +8,16 @@ A fin de hacer uso de las APIs de open bank project se requiere hacer una config
    
 ### **2**. Crear una cuenta
    
-![Register](Register.png "Register")
+![Register](img/Register.png "Register")
 
 
 ### **3**. Obtener un API Key
 
-![GetAPIKey](GetAPIKey.png "GetAPIKey")
+![GetAPIKey](img/GetAPIKey.png "GetAPIKey")
 
 Despues de obtener un API Key deberia llegar un correo electronico de confirmacion al correo que se uso para crear la cuenta en Open Bank Project
 
-![ConfirmationEmail](ConfirmationEmail.png "ConfirmationEmail")
+![ConfirmationEmail](img/ConfirmationEmail.png "ConfirmationEmail")
 
 **IMPORTANTE**, se debe guardar el *Consumer Key* y el *Consumer Secret* en un lugar seguro ya que no va a ser posible volver a conseguirlos despues y por lo tanto habria que borrar la aplicacion y volver a crear otra.
 
