@@ -95,13 +95,13 @@ Otra forma de verificar que efectivamente ya tenemos el rol de CanCreateBank es 
 ### 5. Creando un banco usando la api Create Bank
 
 
-Llegados a este punto y teniendo el rol de CanCreateBank ya estamos preparados para empezar a hacer uso de las APIs, y teniendo ese rol podemos proceder a hacer la creacion de un banco usando la API llamada Create Bank. Hay por lo menos dos formas de hacer esto:
+Llegados a este punto y teniendo el rol de CanCreateBank ya estamos preparados para empezar a hacer uso de las APIs y teniendo ese rol podemos proceder a hacer la creacion de un banco usando la API llamada Create Bank. Hay por lo menos dos formas de hacer esto:
 
 * En Postman
 * En la pagina de Open Bank Project
 
 
-Veamos la forma de hacerlo en Postman:
+#### 5.1 Veamos la forma de hacerlo en Postman:
 
 1) Procedemos a configurar el Header:
 
