@@ -207,6 +207,7 @@ Veamos lo que dice la documentacion:
 
 Podemos ver lo siguiente:
 
+
 * Solo se requiere un parametro en la URL y ese es indicar el USER_ID
 * Se requiere autenticación y el usuario debe ser superadministrador( Esto se logra en el momento de que recibimos el rol de CanCreateBank).
 
