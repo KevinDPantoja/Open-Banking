@@ -92,7 +92,7 @@ Otra forma de verificar que efectivamente ya tenemos el rol de CanCreateBank es 
 ![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/69768e33-eae4-4835-b03f-6ae4b03eaaa3)
 
 
-### 5. Creando un banco usando la api Create Bank
+### 6. Creando un banco usando la api Create Bank
 
 
 Llegados a este punto y teniendo el rol de CanCreateBank ya estamos preparados para empezar a hacer uso de las APIs y teniendo ese rol podemos proceder a hacer la creacion de un banco usando la API llamada Create Bank. Hay por lo menos dos formas de hacer esto:
@@ -101,7 +101,7 @@ Llegados a este punto y teniendo el rol de CanCreateBank ya estamos preparados p
 * En la pagina de Open Bank Project
 
 
-#### 5.1 Veamos la forma de hacerlo en Postman:
+#### 6.1 Veamos la forma de hacerlo en Postman:
 
 En la pagina de Open Bank Project no hay opcion para descargar una coleccion de postman, asi que es necesario crearla uno mismo, pero es sencillo de hacer, veamos lo que dice la documentacion y como lo podemos llevarlo a Postman, si nos dirigimos a la seccion de Create Bank veremos lo siguiente:
 
@@ -168,7 +168,7 @@ En caso de que el banco ya exista obtendremos un error 400:
 Asi que seria necesario cambiar el id del banco en el body.
 
 
-#### 5.2 Respuesta en Postman
+#### 6.2 Respuesta en Postman
 
 Perfecto! ya tenemos la creacion de un banco, a continuacion se pueden ver los parametros en la respuesta JSON
 
@@ -196,7 +196,7 @@ Y esto nos lleva a algo importante, veamos:
 Aqui dice que *"el Usuario puede gestionar el banco que crea y asignar Roles a otros Usuarios"* y como ya hemos mencionado los roles son muy importantes para poder ensayar las APIs, ahora bien, hay una API llamada **Add Entitlement for a User**, y esta API es muy importante porque por medio de ella vamos a poder empezar a agregar los roles que vayamos necesitando, y es que hay muchisimos roles, es una lista muy larga. 
 
 
-### 6. Haciendo uso de la API *Add Entitlement for a User*
+### 7. Haciendo uso de la API *Add Entitlement for a User*
 
 
 Veamos lo que dice la documentacion:
@@ -212,7 +212,7 @@ Podemos ver lo siguiente:
 * Se requiere autenticación y el usuario debe ser superadministrador( Esto se logra en el momento de que recibimos el rol de CanCreateBank).
 
 
-#### 6.1 Veamos un ejemplo practico
+#### 7.1 Veamos un ejemplo practico
 
 
 Supongamos que queremos crear un customer, pero claro, segun la documentacion para crear un customer es necesario tener 2 roles:
