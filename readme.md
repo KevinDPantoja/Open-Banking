@@ -137,10 +137,6 @@ Es de notar que uno puede modificar el body y cambiar el id, el bank_code, full_
 Ahora procedemos a configurar el Header, la documentacion dice lo siguiente respecto al Header:
 
 
-![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/18340c7e-1c7f-427d-b0c2-7e5bc4e8df45)
-
-
-
 ``` json
 {  
 	"Accept-Charset": "UTF-8"
@@ -148,6 +144,11 @@ Ahora procedemos a configurar el Header, la documentacion dice lo siguiente resp
 	"content-type": "application/json;charset=utf-8"
 }
 ```
+
+
+![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/18340c7e-1c7f-427d-b0c2-7e5bc4e8df45)
+
+
 
 
 
