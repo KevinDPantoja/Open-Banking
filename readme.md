@@ -168,52 +168,9 @@ En caso de que el banco ya exista obtendremos un error 400:
 Asi que seria necesario cambiar el id del banco en el body.
 
 
-#### 5.2 Respuesta Postman
+#### 5.2 Respuesta en Postman
 
 Perfecto! ya tenemos la creacion de un banco, a continuacion se pueden ver los parametros en la respuesta JSON
 
 ![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/6467df63-032d-481c-a44f-a07be458dc58)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
- 
 
