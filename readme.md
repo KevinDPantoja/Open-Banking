@@ -116,9 +116,29 @@ como podemos ver en esa barra de texto vemos ciertos datos, pues, esos datos cor
 
 
 
-``` python
-print("hello world")
-```
+``` JSON
+{
+    "id": "testkp",
+    "bank_code": "CGHZ",
+    "full_name": "full name string",
+    "logo": "logo url",
+    "website": "www.openbankproject.com",
+    "bank_routings": [
+        {
+            "scheme": "OBP",
+            "address": "testkp"
+        },
+        {
+            "scheme": "BIC",
+            "address": ""
+        },
+        {
+            "scheme": "scheme value",
+            "address": ""
+        }
+    ],
+    "attributes": []
+}```
 
 
 
