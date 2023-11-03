@@ -212,4 +212,17 @@ Podemos ver lo siguiente:
 * Se requiere autenticación y el usuario debe ser superadministrador( Esto se logra en el momento de que recibimos el rol de CanCreateBank).
 
 
+#### 6.1 Veamos un ejemplo practico
+
+
+Supongamos que queremos crear un customer, pero claro, segun la documentacion para crear un customer es necesario tener 2 roles:
+
+* CanCreateCustomer
+* CanCreateCustomerAtAnyBank
+
+Usemos la API **Add Entitlement for a User** para concedernos esos roles.
+
+
+
+
 
