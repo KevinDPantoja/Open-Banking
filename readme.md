@@ -205,7 +205,10 @@ Veamos lo que dice la documentacion:
 ![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/483b2d43-db44-46bb-a0aa-d7d37da8f867)
 
 
+Podemos ver lo siguiente:
 
+* Solo se requiere un parametro en la URL y ese es indicar el USER_ID
+* Se requiere autenticación y el usuario debe ser superadministrador( Esto se logra en el momento de que recibimos el rol de CanCreateBank).
 
 
 
