@@ -135,15 +135,16 @@ Es de notar que uno puede modificar el body y cambiar el id, el bank_code, full_
 ![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/63d0d21f-51a8-446d-a1ae-b2d54497153f)
 
 
+Ahora procedemos a configurar el Header, la documentacion dice lo siguiente respecto al Header:
+
+
+![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/18340c7e-1c7f-427d-b0c2-7e5bc4e8df45)
 
 
 
 
 
 
-
-
-1) Procedemos a configurar el Header:
 
   
 
