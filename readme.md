@@ -149,6 +149,14 @@ Ahora procedemos a configurar el Header, la documentacion dice lo siguiente resp
 ![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/18340c7e-1c7f-427d-b0c2-7e5bc4e8df45)
 
 
+Asi quedaria en Postman:
+
+
+![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/802f375e-389f-4159-b1a9-3382ff369fb2)
+
+
+Sin embargo, es de notar que tal como se menciono anteriormente, en vista de que aqui estamos en postman es necesario autenticarse para evitar un error de autenticacion, y esto se logra ingresando ese parametro *directlogin* y como observamos es importante poner el token generado previamente en el paso 4.2 y de esta forma ya estaremos autenticados desde postman.
+
 
 
 
