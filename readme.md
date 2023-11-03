@@ -130,9 +130,8 @@ Como podemos ver en esa barra de texto vemos ciertos datos, pues, esos datos cor
 Es de notar que uno puede modificar el body y cambiar el id, el bank_code, full_name y demas parametros. Asi quedaria:
 
 
-
-
 ![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/63d0d21f-51a8-446d-a1ae-b2d54497153f)
+
 
 
 Ahora procedemos a configurar el Header, la documentacion dice lo siguiente respecto al Header:
