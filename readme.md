@@ -198,6 +198,7 @@ Aqui dice que *"el Usuario puede gestionar el banco que crea y asignar Roles a o
 
 ### 6. Haciendo uso de la API *Add Entitlement for a User*
 
+
 Veamos lo que dice la documentacion:
 
 
