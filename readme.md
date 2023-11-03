@@ -198,4 +198,13 @@ Aqui dice que *"el Usuario puede gestionar el banco que crea y asignar Roles a o
 
 ### 6. Haciendo uso de la API *Add Entitlement for a User*
 
+Veamos lo que dice la documentacion:
+
+
+![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/483b2d43-db44-46bb-a0aa-d7d37da8f867)
+
+
+
+
+
 
