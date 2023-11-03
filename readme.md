@@ -112,11 +112,13 @@ En la pagina de Open Bank Project no hay opcion para descargar una coleccion de 
 como podemos ver en esa barra de texto vemos ciertos datos, pues, esos datos corresponden al body que se envia en el request asi que lo que debemos hacer es copiar ese body y ponerlo en el request de Postman y asi quedaria:
 
 
+
 ![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/63d0d21f-51a8-446d-a1ae-b2d54497153f)
 
 
 
-``` JSON
+
+``` json
 {
     "id": "testkp",
     "bank_code": "CGHZ",
@@ -139,6 +141,7 @@ como podemos ver en esa barra de texto vemos ciertos datos, pues, esos datos cor
     ],
     "attributes": []
 }```
+
 
 
 
