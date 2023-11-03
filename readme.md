@@ -86,6 +86,7 @@ Luego de eso es cuestion de esperar la respuesta de alguno de los asesores ya qu
 
 ![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/686d0748-64a1-4144-bf82-b66a5e34234d)
 
+
 Otra forma de verificar que efectivamente ya tenemos el rol de CanCreateBank es dirigirnos al portal web a la seccion de Create Bank:
 
 
