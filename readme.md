@@ -103,13 +103,13 @@ Llegados a este punto y teniendo el rol de CanCreateBank ya estamos preparados p
 
 #### 5.1 Veamos la forma de hacerlo en Postman:
 
-En la pagina de Open Bank Project no hay opcion para descargar una coleccion de postman, asi que es necesario crearla uno mismo, pero es sencillo de hacer, veamos lo que dice la documentacion y como lo podemos llevar a Postman, si nos dirigimos a la seccion de Create Bank veremos lo siguiente:
+En la pagina de Open Bank Project no hay opcion para descargar una coleccion de postman, asi que es necesario crearla uno mismo, pero es sencillo de hacer, veamos lo que dice la documentacion y como lo podemos llevarlo a Postman, si nos dirigimos a la seccion de Create Bank veremos lo siguiente:
 
 
 ![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/d3ce80d6-e1af-40bb-838d-3e88486d8c0c)
 
 
-como podemos ver en esa barra de texto vemos ciertos datos, pues, esos datos corresponden al body que se envia en el request asi que lo que debemos hacer es copiar ese body y ponerlo en el request de Postman, sin embargo, aqui les comparto el Body para que puedan copiarlo
+Como podemos ver en esa barra de texto vemos ciertos datos, pues, esos datos corresponden al body que se envia en el request asi que lo que debemos hacer es copiar ese body y ponerlo en el request de Postman, sin embargo, aqui les comparto el Body para que puedan copiarlo
 
 
 ``` json
