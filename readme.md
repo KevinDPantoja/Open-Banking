@@ -187,4 +187,15 @@ Esto quiere decir que al momento de crear un banco se recibe automaticamente el 
 ![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/63e33927-0011-4eca-8ade-bd20137b94da)
 
 
+Y esto nos lleva a algo importante, veamos:
+
+
+![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/0507e065-70c3-4034-a445-4d56ed4903a9)
+
+
+Aqui dice que *"el Usuario puede gestionar el banco que crea y asignar Roles a otros Usuarios"* y como ya hemos mencionado los roles son muy importantes para poder ensayar las APIs, ahora bien, hay una API llamada **Add Entitlement for a User**, y esta API es muy importante porque por medio de ella vamos a poder empezar a agregar los roles que vayamos necesitando, y es que hay muchisimos roles, es una lista muy larga. 
+
+
+### 6. Haciendo uso de la API *Add Entitlement for a User*
+
 
