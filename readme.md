@@ -105,6 +105,7 @@ Llegados a este punto y teniendo el rol de CanCreateBank ya estamos preparados p
 
 En la pagina de Open Bank Project no hay opcion para descargar una coleccion de postman, asi que es necesario crearla uno mismo, pero es sencillo de hacer, veamos lo que dice la documentacion y como lo podemos llevar a Postman, si nos dirigimos a la seccion de Create Bank veremos lo siguiente:
 
+
 ![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/d3ce80d6-e1af-40bb-838d-3e88486d8c0c)
 
 
