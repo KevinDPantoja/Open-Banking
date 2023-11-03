@@ -160,6 +160,26 @@ Asi quedaria en Postman:
 
 Sin embargo, es de notar que tal como se menciono anteriormente, en vista de que aqui estamos en postman es necesario autenticarse para evitar un error de autenticacion, y esto se logra ingresando ese parametro *directlogin* y como observamos es importante poner el token generado previamente en el paso 4.2 y de esta forma ya estaremos autenticados desde postman.
 
+En caso de que el banco ya exista obtendremos un error 400:
+
+![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/58ba1cef-b9e6-4785-b504-d34b23943cd7)
+
+
+Asi que seria necesario cambiar el id del banco en el body.
+
+
+#### 5.2 Respuesta Postman
+
+Perfecto! ya tenemos la creacion de un banco, a continuacion se pueden ver los parametros en la respuesta JSON
+
+![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/6467df63-032d-481c-a44f-a07be458dc58)
+
+
+
+
+
+
+
 
 
 
