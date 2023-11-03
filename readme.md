@@ -140,6 +140,7 @@ Ahora procedemos a configurar el Header, la documentacion dice lo siguiente resp
 ![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/18340c7e-1c7f-427d-b0c2-7e5bc4e8df45)
 
 
+
 ``` json
 {  
 	"Accept-Charset": "UTF-8"
