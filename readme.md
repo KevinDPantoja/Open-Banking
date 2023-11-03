@@ -127,7 +127,7 @@ como podemos ver en esa barra de texto vemos ciertos datos, pues, esos datos cor
 ```
 
 
-Es de notar que uno puede modificar el body, y cambiar el id, el bank_code, full_name y demas parametros. Asi quedaria:
+Es de notar que uno puede modificar el body y cambiar el id, el bank_code, full_name y demas parametros. Asi quedaria:
 
 
 
