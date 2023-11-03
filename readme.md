@@ -174,3 +174,17 @@ Perfecto! ya tenemos la creacion de un banco, a continuacion se pueden ver los p
 
 ![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/6467df63-032d-481c-a44f-a07be458dc58)
 
+
+Observemos algo adicional que aparece en la documentacion:
+
+
+![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/2dd905ac-cca3-4b8d-8b2c-7a9a00ed769b)
+
+
+Esto quiere decir que al momento de crear un banco se recibe automaticamente el rol de *CanCreateEntitlementAtOneBank* y esto se puede verificar en el correo electronico:
+
+
+![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/63e33927-0011-4eca-8ade-bd20137b94da)
+
+
+
