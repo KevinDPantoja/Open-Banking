@@ -86,6 +86,10 @@ Luego de eso es cuestion de esperar la respuesta de alguno de los asesores ya qu
 
 ![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/686d0748-64a1-4144-bf82-b66a5e34234d)
 
+Otra forma de verificar que efectivamente ya tenemos el rol de CanCreateBank es dirigirnos al portal web a la seccion de Create Bank:
+
+
+![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/69768e33-eae4-4835-b03f-6ae4b03eaaa3)
 
 
 Ya teniendo ese rol podemos proceder a hacer la creacion de un banco usando las APIs de Open Bank Project. Hay por lo menos dos formas de hacer esto:
