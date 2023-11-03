@@ -109,7 +109,26 @@ En la pagina de Open Bank Project no hay opcion para descargar una coleccion de 
 ![image](https://github.com/KevinDPantoja/Open-Banking/assets/117990470/d3ce80d6-e1af-40bb-838d-3e88486d8c0c)
 
 
-como podemos ver en esa barra de texto vemos ciertos datos, pues, esos datos corresponden al body que se envia en el request asi que lo que debemos hacer es copiar ese body y ponerlo en el request de Postman y asi quedaria:
+como podemos ver en esa barra de texto vemos ciertos datos, pues, esos datos corresponden al body que se envia en el request asi que lo que debemos hacer es copiar ese body y ponerlo en el request de Postman, sin embargo, aqui les comparto el Body para que puedan copiarlo
+
+
+``` json
+{  
+	"id":"testkp",  
+	"bank_code":"CGHZ",  
+	"full_name":"full name string",  
+	"logo":"logo url",  
+	"website":"www.openbankproject.com",  
+	"bank_routings":[{    
+		"scheme":"scheme value",    
+		"address":""  
+        }]
+}
+```
+
+
+Es de notar que uno puede modificar el body, y cambiar el id, el bank_code, full_name y demas parametros. Asi
+
 
 
 
@@ -118,29 +137,6 @@ como podemos ver en esa barra de texto vemos ciertos datos, pues, esos datos cor
 
 
 
-``` json
-{
-    "id": "testkp",
-    "bank_code": "CGHZ",
-    "full_name": "full name string",
-    "logo": "logo url",
-    "website": "www.openbankproject.com",
-    "bank_routings": [
-        {
-            "scheme": "OBP",
-            "address": "testkp"
-        },
-        {
-            "scheme": "BIC",
-            "address": ""
-        },
-        {
-            "scheme": "scheme value",
-            "address": ""
-        }
-    ],
-    "attributes": []
-}```
 
 
 
