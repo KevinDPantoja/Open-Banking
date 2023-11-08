@@ -1,0 +1,1339 @@
+{
+	"info": {
+		"_postman_id": "8a1df4a2-e978-4ee7-86e9-fbd99c34a0df",
+		"name": "Open Bank Project",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "11227902",
+		"_collection_link": "https://lunar-crater-595044.postman.co/workspace/Open-Bank-Project~cc3216b4-b8f2-4064-af91-c356ecea87b0/collection/11227902-8a1df4a2-e978-4ee7-86e9-fbd99c34a0df?action=share&source=collection_link&creator=11227902"
+	},
+	"item": [
+		{
+			"name": "Authenticate",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "directlogin",
+						"value": "username=Kevindpv, password=1030608224Kp#, consumer_key=qlwjhlsetpv0eboy432o0hqihlx13as3eo403ut1",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/my/logins/direct",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"my",
+						"logins",
+						"direct"
+					]
+				},
+				"description": "Autentica a un usuario y devuelve un token de acceso"
+			},
+			"response": [
+				{
+					"name": "Authenticate",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "directlogin",
+								"value": "username=Kevindpv, password=1030608224Kp#, consumer_key=qlwjhlsetpv0eboy432o0hqihlx13as3eo403ut1",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "https://apisandbox.openbankproject.com/my/logins/direct",
+							"protocol": "https",
+							"host": [
+								"apisandbox",
+								"openbankproject",
+								"com"
+							],
+							"path": [
+								"my",
+								"logins",
+								"direct"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Nov 2023 17:30:47 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "87"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Set-Cookie",
+							"value": "JSESSIONID=node0osfbv1h8q5twizd52n2a3pps119646.node0; Path=/; HTTPOnly; Secure"
+						},
+						{
+							"key": "Expires",
+							"value": "Wed, 8 Nov 2023 17:30:47 GMT"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private, no-store"
+						},
+						{
+							"key": "Correlation-Id",
+							"value": "node0osfbv1h8q5twizd52n2a3pps119646"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "ETag",
+							"value": "2238f202972d6230de9cd9e10b98ca92fac1388a7e904f6b024d66cf29160498"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,authorization,origin,accept,client-security-token"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"token\": \"eyJhbGciOiJIUzI1NiJ9.eyIiOiIifQ.FP4HR1DXwyTm1OD6QGxFUjHTXQ6t3JWgE-OHH40uWtE\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Add Entitlement for a User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Charset",
+						"value": "UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json;charset=utf-8",
+						"type": "text"
+					},
+					{
+						"key": "directlogin",
+						"value": "token={{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{   \"bank_id\":\"BancoStar\",  \r\n    \"role_name\":\"CanCreateCustomer\"\r\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/obp/v5.1.0/users/{{USER_ID}}/entitlements",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"obp",
+						"v5.1.0",
+						"users",
+						"{{USER_ID}}",
+						"entitlements"
+					]
+				},
+				"description": "Crea derechos y otorga roles a usuarios"
+			},
+			"response": [
+				{
+					"name": "Add Entitlement for a User",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept-Charset",
+								"value": "UTF-8",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json;charset=utf-8",
+								"type": "text"
+							},
+							{
+								"key": "directlogin",
+								"value": "token=\"eyJhbGciOiJIUzI1NiJ9.eyIiOiIifQ.NwaG-_Jzond65tnMVfU0SM1FTKP3Yyil1EVdm1DpqVs\"",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \"bank_id\":\"BancoStar\",  \r\n    \"role_name\":\"CanCreateCustomer\"\r\n}"
+						},
+						"url": {
+							"raw": "https://apisandbox.openbankproject.com/obp/v5.1.0/users/77f931bd-2402-44bb-8db3-8828c614be2d/entitlements",
+							"protocol": "https",
+							"host": [
+								"apisandbox",
+								"openbankproject",
+								"com"
+							],
+							"path": [
+								"obp",
+								"v5.1.0",
+								"users",
+								"77f931bd-2402-44bb-8db3-8828c614be2d",
+								"entitlements"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Nov 2023 17:32:07 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "111"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Expires",
+							"value": "Wed, 8 Nov 2023 17:32:07 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private, no-store"
+						},
+						{
+							"key": "Correlation-Id",
+							"value": "node0osfbv1h8q5twizd52n2a3pps119646"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "ETag",
+							"value": "bcce296d187973a94557e36d484aff2b551510fd24f143a44062725fce0c00ed"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,authorization,origin,accept,client-security-token"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"entitlement_id\": \"9b84f458-8ecb-45d9-b0d2-7731b9f12fc8\",\n    \"role_name\": \"CanCreateCustomer\",\n    \"bank_id\": \"BancoStar\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Bank",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Charset",
+						"value": "UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json;charset=utf-8",
+						"type": "text"
+					},
+					{
+						"key": "directlogin",
+						"value": "token={{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n\t\"id\":\"BancoStarTest\",  \r\n\t\"bank_code\":\"BCSTT\",  \r\n\t\"full_name\":\"Banco Star\",  \r\n\t\"logo\":\"logo url\",  \r\n\t\"website\":\"www.bancostartest.com\",  \r\n\t\"bank_routings\":[{    \r\n\t\t\"scheme\":\"scheme value\",    \r\n\t\t\"address\":\"Calle 4.2 # 23-04\"  \r\n        }]\r\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/obp/v5.1.0/banks",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"obp",
+						"v5.1.0",
+						"banks"
+					]
+				},
+				"description": "Crear un nuevo banco (Acceso autenticado). Al usuario que cree esto se le asignará automáticamente el rol CanCreateEntitlementAtOneBank. Así el Usuario puede gestionar el banco que crea y asignar Roles a otros Usuarios."
+			},
+			"response": [
+				{
+					"name": "Create Bank",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept-Charset",
+								"value": "UTF-8",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json;charset=utf-8",
+								"type": "text"
+							},
+							{
+								"key": "directlogin",
+								"value": "token=\"eyJhbGciOiJIUzI1NiJ9.eyIiOiIifQ.NwaG-_Jzond65tnMVfU0SM1FTKP3Yyil1EVdm1DpqVs\"",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \r\n\t\"id\":\"BancoStarTest\",  \r\n\t\"bank_code\":\"BCSTT\",  \r\n\t\"full_name\":\"Banco Star\",  \r\n\t\"logo\":\"logo url\",  \r\n\t\"website\":\"www.bancostartest.com\",  \r\n\t\"bank_routings\":[{    \r\n\t\t\"scheme\":\"scheme value\",    \r\n\t\t\"address\":\"Calle 4.2 # 23-04\"  \r\n        }]\r\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/obp/v5.1.0/banks",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"obp",
+								"v5.1.0",
+								"banks"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Nov 2023 17:39:45 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "282"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Expires",
+							"value": "Wed, 8 Nov 2023 17:39:45 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private, no-store"
+						},
+						{
+							"key": "Correlation-Id",
+							"value": "node0osfbv1h8q5twizd52n2a3pps119646"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "ETag",
+							"value": "fe418872063f6a42d945d4eb8b5df22ddb7606a5edf39319b2dfdd91459a921e"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,authorization,origin,accept,client-security-token"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"BancoStarTest\",\n    \"bank_code\": \"BCSTT\",\n    \"full_name\": \"Banco Star\",\n    \"logo\": \"logo url\",\n    \"website\": \"www.bancostartest.com\",\n    \"bank_routings\": [\n        {\n            \"scheme\": \"OBP\",\n            \"address\": \"BancoStarTest\"\n        },\n        {\n            \"scheme\": \"BIC\",\n            \"address\": \"\"\n        },\n        {\n            \"scheme\": \"scheme value\",\n            \"address\": \"Calle 4.2 # 23-04\"\n        }\n    ],\n    \"attributes\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Create Account",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Charset",
+						"value": "UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json;charset=utf-8",
+						"type": "text"
+					},
+					{
+						"key": "directlogin",
+						"value": "token={{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \r\n    \"user_id\":\"77f931bd-2402-44bb-8db3-8828c614be2d\",\r\n    \"label\":\"David Vergara\",\r\n    \"product_code\":\"1234BW\", \r\n     \"balance\":{    \"currency\":\"USD\",\r\n                    \"amount\":\"0\"  },  \r\n                    \"branch_id\":\"DERBY6\",\r\n                    \"account_routings\":[{    \r\n                        \"scheme\":\"AccountNumber\", \r\n                        \"address\":\"Calle 246.14 # 53-19\"  \r\n                }]       \r\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/obp/v5.1.0/banks/BancoStar/accounts",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"obp",
+						"v5.1.0",
+						"banks",
+						"BancoStar",
+						"accounts"
+					]
+				},
+				"description": "Cree una cuenta en el banco especificado por BANK_ID. El Usuario puede crear una Cuenta para sí mismo, o para el Usuario que tiene el USER_ID especificado en el body del POST request"
+			},
+			"response": [
+				{
+					"name": "Create Account",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept-Charset",
+								"value": "UTF-8",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json;charset=utf-8",
+								"type": "text"
+							},
+							{
+								"key": "directlogin",
+								"value": "token={{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \r\n    \"user_id\":\"77f931bd-2402-44bb-8db3-8828c614be2d\",\r\n    \"label\":\"David Vergara\",\r\n    \"product_code\":\"1234BW\", \r\n     \"balance\":{    \"currency\":\"USD\",\r\n                    \"amount\":\"0\"  },  \r\n                    \"branch_id\":\"DERBY6\",\r\n                    \"account_routings\":[{    \r\n                        \"scheme\":\"AccountNumber\", \r\n                        \"address\":\"Calle 246.14 # 53-19\"  \r\n                }]       \r\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/obp/v5.1.0/banks/BancoStar/accounts",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"obp",
+								"v5.1.0",
+								"banks",
+								"BancoStar",
+								"accounts"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Nov 2023 16:25:49 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "321"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Expires",
+							"value": "Wed, 8 Nov 2023 16:25:49 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private, no-store"
+						},
+						{
+							"key": "Correlation-Id",
+							"value": "node076ndr6xrq1lt1qc49jego34nn114290"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "ETag",
+							"value": "9e2512908cf2553a3533ad5b0cef8d8bf550314e0c4af51b5ef478880759e54"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,authorization,origin,accept,client-security-token"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"account_id\": \"1ae7edbf-3c68-4d4b-86ce-6f06c51093a5\",\n    \"user_id\": \"77f931bd-2402-44bb-8db3-8828c614be2d\",\n    \"label\": \"David Vergara\",\n    \"product_code\": \"1234BW\",\n    \"balance\": {\n        \"currency\": \"USD\",\n        \"amount\": \"0.00\"\n    },\n    \"branch_id\": \"DERBY6\",\n    \"account_routings\": [\n        {\n            \"scheme\": \"AccountNumber\",\n            \"address\": \"Calle 246.14 # 53-19\"\n        }\n    ],\n    \"account_attributes\": []\n}"
+				}
+			]
+		},
+		{
+			"name": "Get User Id (Current)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Charset",
+						"value": "UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json;charset=utf-8",
+						"type": "text"
+					},
+					{
+						"key": "directlogin",
+						"value": "token={{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/obp/v5.1.0/users/current/user_id",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"obp",
+						"v5.1.0",
+						"users",
+						"current",
+						"user_id"
+					]
+				},
+				"description": "Obtiene el USER_ID del usuario que se encuentra autenticado"
+			},
+			"response": [
+				{
+					"name": "Get User Id (Current)",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Charset",
+								"value": "UTF-8",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json;charset=utf-8",
+								"type": "text"
+							},
+							{
+								"key": "directlogin",
+								"value": "token={{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/obp/v5.1.0/users/current/user_id",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"obp",
+								"v5.1.0",
+								"users",
+								"current",
+								"user_id"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Nov 2023 17:48:12 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "50"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Expires",
+							"value": "Wed, 8 Nov 2023 17:48:12 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private, no-store"
+						},
+						{
+							"key": "Correlation-Id",
+							"value": "node0osfbv1h8q5twizd52n2a3pps119646"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "ETag",
+							"value": "56a885fe0eca842496a090758ebf396cb52fdf8e2a40545f941633de3357d4d4"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,authorization,origin,accept,client-security-token"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user_id\": \"77f931bd-2402-44bb-8db3-8828c614be2d\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get User (Current)",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Charset",
+						"value": "UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json;charset=utf-8",
+						"type": "text"
+					},
+					{
+						"key": "directlogin",
+						"value": "token={{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/obp/v5.1.0/users/current/user_id",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"obp",
+						"v5.1.0",
+						"users",
+						"current",
+						"user_id"
+					]
+				},
+				"description": "Obtiene los datos del usuario que se encuentra autenticado"
+			},
+			"response": [
+				{
+					"name": "Get User Id (Current) Copy",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Charset",
+								"value": "UTF-8",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json;charset=utf-8",
+								"type": "text"
+							},
+							{
+								"key": "directlogin",
+								"value": "token={{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/obp/v5.1.0/users/current",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"obp",
+								"v5.1.0",
+								"users",
+								"current"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Nov 2023 17:48:56 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "5868"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Expires",
+							"value": "Wed, 8 Nov 2023 17:48:56 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private, no-store"
+						},
+						{
+							"key": "Correlation-Id",
+							"value": "node0osfbv1h8q5twizd52n2a3pps119646"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "ETag",
+							"value": "e4bee7c949c6d7912962a15f6e9115d83e98be347b928cf6710fed76d60faa3b"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,authorization,origin,accept,client-security-token"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user_id\": \"77f931bd-2402-44bb-8db3-8828c614be2d\",\n    \"email\": \"kevinpantoja@cbit-online.com\",\n    \"provider_id\": \"Kevindpv\",\n    \"provider\": \"https://apisandbox.openbankproject.com\",\n    \"username\": \"Kevindpv\",\n    \"entitlements\": {\n        \"list\": [\n            {\n                \"entitlement_id\": \"b3321967-26eb-4765-918e-5ab920a7ae51\",\n                \"role_name\": \"CanReadDynamicResourceDocsAtOneBank\",\n                \"bank_id\": \"BancoStarTest\"\n            },\n            {\n                \"entitlement_id\": \"cf67c9cc-7c68-419b-a497-428176284e3c\",\n                \"role_name\": \"CanCreateEntitlementAtOneBank\",\n                \"bank_id\": \"BancoStarTest\"\n            },\n            {\n                \"entitlement_id\": \"9b84f458-8ecb-45d9-b0d2-7731b9f12fc8\",\n                \"role_name\": \"CanCreateCustomer\",\n                \"bank_id\": \"BancoStar\"\n            },\n            {\n                \"entitlement_id\": \"2bed4bc0-2309-46db-afaf-3d3a3d6b066e\",\n                \"role_name\": \"CanCreateAccount\",\n                \"bank_id\": \"BancoStar\"\n            },\n            {\n                \"entitlement_id\": \"958711af-274a-4386-9e21-1971bb74dfc5\",\n                \"role_name\": \"CanReadDynamicResourceDocsAtOneBank\",\n                \"bank_id\": \"BancoStar\"\n            },\n            {\n                \"entitlement_id\": \"c32782ad-4888-451f-8d43-d0da765f2c97\",\n                \"role_name\": \"CanCreateEntitlementAtOneBank\",\n                \"bank_id\": \"BancoStar\"\n            },\n            {\n                \"entitlement_id\": \"84c2a544-852d-498e-93f9-6c07b0f2b75d\",\n                \"role_name\": \"CanGetBankAttribute\",\n                \"bank_id\": \"BancoTest\"\n            },\n            {\n                \"entitlement_id\": \"8c53a884-99ee-4c1e-a96d-38b741d47bcf\",\n                \"role_name\": \"CanCreateAccount\",\n                \"bank_id\": \"BancoTest\"\n            },\n            {\n                \"entitlement_id\": \"728f0dcb-7462-4901-97ff-b208e114d1d0\",\n                \"role_name\": \"CanCreateAccount\",\n                \"bank_id\": \"Periferia_Test\"\n            },\n            {\n                \"entitlement_id\": \"bbec097c-05ca-4dd7-aa9d-4ee7926f273d\",\n                \"role_name\": \"CanReadDynamicResourceDocsAtOneBank\",\n                \"bank_id\": \"Periferia_Test\"\n            },\n            {\n                \"entitlement_id\": \"71bcaac5-0719-4f09-8693-d90dc8ec1bc7\",\n                \"role_name\": \"CanCreateEntitlementAtOneBank\",\n                \"bank_id\": \"Periferia_Test\"\n            },\n            {\n                \"entitlement_id\": \"842faf03-e167-4eab-9955-ee0f9dc35b71\",\n                \"role_name\": \"CanReadDynamicResourceDocsAtOneBank\",\n                \"bank_id\": \"BancoTest\"\n            },\n            {\n                \"entitlement_id\": \"21763590-4996-4525-8586-70b6d21cd6a5\",\n                \"role_name\": \"CanCreateEntitlementAtOneBank\",\n                \"bank_id\": \"BancoTest\"\n            },\n            {\n                \"entitlement_id\": \"d3a14e0e-d961-4a2c-85ef-cad53e968feb\",\n                \"role_name\": \"CanReadDynamicResourceDocsAtOneBank\",\n                \"bank_id\": \"testkp\"\n            },\n            {\n                \"entitlement_id\": \"546a675a-c28d-43f2-a7cb-fafe6d8a5992\",\n                \"role_name\": \"CanCreateEntitlementAtOneBank\",\n                \"bank_id\": \"testkp\"\n            },\n            {\n                \"entitlement_id\": \"2739a792-e39e-472c-893f-5a4bebe7be63\",\n                \"role_name\": \"CanCreateCustomer\",\n                \"bank_id\": \"PERIF_IT1\"\n            },\n            {\n                \"entitlement_id\": \"6578c323-a7da-4e82-958f-65368855e3c0\",\n                \"role_name\": \"CanReadDynamicResourceDocsAtOneBank\",\n                \"bank_id\": \"PERIF_IT1\"\n            },\n            {\n                \"entitlement_id\": \"b6aca25f-b8f1-475c-9a7b-61285038daaa\",\n                \"role_name\": \"CanCreateEntitlementAtOneBank\",\n                \"bank_id\": \"PERIF_IT1\"\n            },\n            {\n                \"entitlement_id\": \"f447b57a-2517-405e-9b3d-56db70e4e488\",\n                \"role_name\": \"CanReadDynamicResourceDocsAtOneBank\",\n                \"bank_id\": \"PERIF_IT\"\n            },\n            {\n                \"entitlement_id\": \"69aaffc6-5330-49b3-9863-1ec945d9b79c\",\n                \"role_name\": \"CanCreateEntitlementAtOneBank\",\n                \"bank_id\": \"PERIF_IT\"\n            },\n            {\n                \"entitlement_id\": \"e44d506a-c09c-49f5-a961-6f1de5c9146b\",\n                \"role_name\": \"CanReadDynamicResourceDocsAtOneBank\",\n                \"bank_id\": \"P_IT\"\n            },\n            {\n                \"entitlement_id\": \"a272e867-6c4f-4bfc-9dd1-1fd440289887\",\n                \"role_name\": \"CanCreateEntitlementAtOneBank\",\n                \"bank_id\": \"P_IT\"\n            },\n            {\n                \"entitlement_id\": \"bbe26dec-dd9f-44f0-be30-3e392c311b6e\",\n                \"role_name\": \"CanReadDynamicResourceDocsAtOneBank\",\n                \"bank_id\": \"Ctest1\"\n            },\n            {\n                \"entitlement_id\": \"ca39c96f-1433-4a9d-a80c-ef07706692f8\",\n                \"role_name\": \"CanCreateEntitlementAtOneBank\",\n                \"bank_id\": \"Ctest1\"\n            },\n            {\n                \"entitlement_id\": \"08401650-5032-449d-806c-b25d65a8a05e\",\n                \"role_name\": \"CanReadDynamicResourceDocsAtOneBank\",\n                \"bank_id\": \"Ctest\"\n            },\n            {\n                \"entitlement_id\": \"ecdff4d5-826a-42b4-9d3d-390110f89a60\",\n                \"role_name\": \"CanCreateEntitlementAtOneBank\",\n                \"bank_id\": \"Ctest\"\n            },\n            {\n                \"entitlement_id\": \"3facb9aa-9df9-47d5-af39-cbba188aa072\",\n                \"role_name\": \"CanCreateCardsForBank\",\n                \"bank_id\": \"Test_Bank_01\"\n            },\n            {\n                \"entitlement_id\": \"f580417a-519b-4232-b822-0f132bb11e4e\",\n                \"role_name\": \"CanCreateProduct\",\n                \"bank_id\": \"Test_Bank_01\"\n            },\n            {\n                \"entitlement_id\": \"cccd0c68-664b-41a7-9788-2a985470b4ae\",\n                \"role_name\": \"CanCreateCustomer\",\n                \"bank_id\": \"Test_Bank_01\"\n            },\n            {\n                \"entitlement_id\": \"8e8d4348-ad6f-4b7c-bab6-3d082301e84d\",\n                \"role_name\": \"CanCreateAccount\",\n                \"bank_id\": \"Test_Bank_01\"\n            },\n            {\n                \"entitlement_id\": \"76a55947-3672-4352-9f27-9b7da753f711\",\n                \"role_name\": \"CanReadDynamicResourceDocsAtOneBank\",\n                \"bank_id\": \"Test_Bank_01\"\n            },\n            {\n                \"entitlement_id\": \"91766887-9319-4c9a-89a7-11a8480a05b5\",\n                \"role_name\": \"CanCreateEntitlementAtOneBank\",\n                \"bank_id\": \"Test_Bank_01\"\n            },\n            {\n                \"entitlement_id\": \"ff860ae5-578c-4297-b6ce-e376643b9946\",\n                \"role_name\": \"CanCreateBank\",\n                \"bank_id\": \"\"\n            }\n        ]\n    },\n    \"views\": {\n        \"list\": [\n            {\n                \"bank_id\": \"BancoStar\",\n                \"account_id\": \"1ae7edbf-3c68-4d4b-86ce-6f06c51093a5\",\n                \"view_id\": \"owner\"\n            },\n            {\n                \"bank_id\": \"BancoStar\",\n                \"account_id\": \"1ae7edbf-3c68-4d4b-86ce-6f06c51093a5\",\n                \"view_id\": \"ManageCustomViews\"\n            },\n            {\n                \"bank_id\": \"BancoStar\",\n                \"account_id\": \"eb5fa70b-59c6-4731-bd61-e69e3d638329\",\n                \"view_id\": \"ManageCustomViews\"\n            },\n            {\n                \"bank_id\": \"BancoStar\",\n                \"account_id\": \"eb5fa70b-59c6-4731-bd61-e69e3d638329\",\n                \"view_id\": \"owner\"\n            },\n            {\n                \"bank_id\": \"BancoTest\",\n                \"account_id\": \"0ab4563b-6f98-4274-99b3-64cc1e65a233\",\n                \"view_id\": \"ManageCustomViews\"\n            },\n            {\n                \"bank_id\": \"BancoTest\",\n                \"account_id\": \"0ab4563b-6f98-4274-99b3-64cc1e65a233\",\n                \"view_id\": \"owner\"\n            },\n            {\n                \"bank_id\": \"BancoTest\",\n                \"account_id\": \"92c4040e-070e-427e-8a95-2ab886babd87\",\n                \"view_id\": \"ManageCustomViews\"\n            },\n            {\n                \"bank_id\": \"BancoTest\",\n                \"account_id\": \"92c4040e-070e-427e-8a95-2ab886babd87\",\n                \"view_id\": \"owner\"\n            },\n            {\n                \"bank_id\": \"BancoTest\",\n                \"account_id\": \"a58bd2aa-1ac2-4b82-8eaa-88a37153c785\",\n                \"view_id\": \"ManageCustomViews\"\n            },\n            {\n                \"bank_id\": \"BancoTest\",\n                \"account_id\": \"a58bd2aa-1ac2-4b82-8eaa-88a37153c785\",\n                \"view_id\": \"owner\"\n            },\n            {\n                \"bank_id\": \"BancoTest\",\n                \"account_id\": \"ceb56fac-1865-4199-837a-2ba0fed01899\",\n                \"view_id\": \"ManageCustomViews\"\n            },\n            {\n                \"bank_id\": \"BancoTest\",\n                \"account_id\": \"ceb56fac-1865-4199-837a-2ba0fed01899\",\n                \"view_id\": \"owner\"\n            },\n            {\n                \"bank_id\": \"Test_Bank_01\",\n                \"account_id\": \"2bd97e2d-f29b-4356-9647-5f7ced196419\",\n                \"view_id\": \"ManageCustomViews\"\n            },\n            {\n                \"bank_id\": \"Test_Bank_01\",\n                \"account_id\": \"2bd97e2d-f29b-4356-9647-5f7ced196419\",\n                \"view_id\": \"owner\"\n            },\n            {\n                \"bank_id\": \"Test_Bank_01\",\n                \"account_id\": \"bed26cf4-6739-4705-a793-c905ed6e4fb7\",\n                \"view_id\": \"owner\"\n            },\n            {\n                \"bank_id\": \"Test_Bank_01\",\n                \"account_id\": \"bed26cf4-6739-4705-a793-c905ed6e4fb7\",\n                \"view_id\": \"ManageCustomViews\"\n            }\n        ]\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Accounts at Bank",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept-Charset",
+						"value": "UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json;charset=utf-8",
+						"type": "text"
+					},
+					{
+						"key": "directlogin",
+						"value": "token={{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/obp/v5.1.0/banks/BancoStar/accounts",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"obp",
+						"v5.1.0",
+						"banks",
+						"BancoStar",
+						"accounts"
+					]
+				},
+				"description": "Devuelve la lista de cuentas a las que el usuario tiene acceso, en el banco identificado con BANK_ID"
+			},
+			"response": [
+				{
+					"name": "Get Accounts at Bank",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Accept-Charset",
+								"value": "UTF-8",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json;charset=utf-8",
+								"type": "text"
+							},
+							{
+								"key": "directlogin",
+								"value": "token={{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/obp/v5.1.0/banks/BancoStar/accounts",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"obp",
+								"v5.1.0",
+								"banks",
+								"BancoStar",
+								"accounts"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Nov 2023 17:49:25 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "489"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Expires",
+							"value": "Wed, 8 Nov 2023 17:49:25 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private, no-store"
+						},
+						{
+							"key": "Correlation-Id",
+							"value": "node0osfbv1h8q5twizd52n2a3pps119646"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "ETag",
+							"value": "20ce2e87bba272c5111ae0f0ecb0a16ef0188d973a7b194348a130e5551d169"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,authorization,origin,accept,client-security-token"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": \"1ae7edbf-3c68-4d4b-86ce-6f06c51093a5\",\n        \"label\": \"David Vergara\",\n        \"bank_id\": \"BancoStar\",\n        \"views_available\": [\n            {\n                \"id\": \"ManageCustomViews\",\n                \"short_name\": \"Managecustomviews\",\n                \"is_public\": false\n            },\n            {\n                \"id\": \"owner\",\n                \"short_name\": \"Owner\",\n                \"is_public\": false\n            }\n        ]\n    },\n    {\n        \"id\": \"eb5fa70b-59c6-4731-bd61-e69e3d638329\",\n        \"label\": \"Kevin Pantoja\",\n        \"bank_id\": \"BancoStar\",\n        \"views_available\": [\n            {\n                \"id\": \"ManageCustomViews\",\n                \"short_name\": \"Managecustomviews\",\n                \"is_public\": false\n            },\n            {\n                \"id\": \"owner\",\n                \"short_name\": \"Owner\",\n                \"is_public\": false\n            }\n        ]\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "Create Transaction Request (ACCOUNT)",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept-Charset",
+						"value": "UTF-8",
+						"type": "text"
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "content-type",
+						"value": "application/json;charset=utf-8",
+						"type": "text"
+					},
+					{
+						"key": "directlogin",
+						"value": "token={{token}}",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{  \"to\":{    \r\n    \"bank_id\":\"BancoStar\", \r\n    \"account_id\":\"1ae7edbf-3c68-4d4b-86ce-6f06c51093a5\"  \r\n    },\r\n      \"value\":{    \"currency\":\"EUR\",\r\n          \"amount\":\"4\"  \r\n          },\r\n          \"description\":\"Pago cafe Juan Valdez\"\r\n}"
+				},
+				"url": {
+					"raw": "{{baseUrl}}/obp/v5.1.0/banks/BancoTest/accounts/ceb56fac-1865-4199-837a-2ba0fed01899/owner/transaction-request-types/ACCOUNT/transaction-requests",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"obp",
+						"v5.1.0",
+						"banks",
+						"BancoTest",
+						"accounts",
+						"ceb56fac-1865-4199-837a-2ba0fed01899",
+						"owner",
+						"transaction-request-types",
+						"ACCOUNT",
+						"transaction-requests"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Create Transaction Request (ACCOUNT)",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Accept-Charset",
+								"value": "UTF-8",
+								"type": "text"
+							},
+							{
+								"key": "Accept",
+								"value": "application/json",
+								"type": "text"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json;charset=utf-8",
+								"type": "text"
+							},
+							{
+								"key": "directlogin",
+								"value": "token={{token}}",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{  \"to\":{    \r\n    \"bank_id\":\"BancoStar\", \r\n    \"account_id\":\"1ae7edbf-3c68-4d4b-86ce-6f06c51093a5\"  \r\n    },\r\n      \"value\":{    \"currency\":\"EUR\",\r\n          \"amount\":\"4\"  \r\n          },\r\n          \"description\":\"Pago cafe Juan Valdez\"\r\n}"
+						},
+						"url": {
+							"raw": "{{baseUrl}}/obp/v5.1.0/banks/BancoTest/accounts/ceb56fac-1865-4199-837a-2ba0fed01899/owner/transaction-request-types/ACCOUNT/transaction-requests",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"obp",
+								"v5.1.0",
+								"banks",
+								"BancoTest",
+								"accounts",
+								"ceb56fac-1865-4199-837a-2ba0fed01899",
+								"owner",
+								"transaction-request-types",
+								"ACCOUNT",
+								"transaction-requests"
+							]
+						}
+					},
+					"status": "Created",
+					"code": 201,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Nov 2023 16:49:17 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "599"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Expires",
+							"value": "Wed, 8 Nov 2023 16:49:17 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private, no-store"
+						},
+						{
+							"key": "Correlation-Id",
+							"value": "node076ndr6xrq1lt1qc49jego34nn114290"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "ETag",
+							"value": "808ec469b9f11a2b9bb461420ad338eae99dfb7df0b8318d432cbebb09bfb085"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,authorization,origin,accept,client-security-token"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": \"c9750d8f-949e-4429-8ad6-18fda64257de\",\n    \"type\": \"ACCOUNT\",\n    \"from\": {\n        \"bank_id\": \"BancoTest\",\n        \"account_id\": \"ceb56fac-1865-4199-837a-2ba0fed01899\"\n    },\n    \"details\": {\n        \"to_sandbox_tan\": {\n            \"bank_id\": \"BancoStar\",\n            \"account_id\": \"1ae7edbf-3c68-4d4b-86ce-6f06c51093a5\"\n        },\n        \"value\": {\n            \"currency\": \"EUR\",\n            \"amount\": \"4\"\n        },\n        \"description\": \"Pago cafe Juan Valdez\"\n    },\n    \"transaction_ids\": [\n        \"753658b0-0b7e-4cfc-ac6b-e2d8dd2beade\"\n    ],\n    \"status\": \"COMPLETED\",\n    \"start_date\": \"2023-11-08T16:49:17Z\",\n    \"end_date\": \"2023-11-08T16:49:17Z\",\n    \"challenges\": [],\n    \"charge\": {\n        \"summary\": \"Total charges for completed transaction\",\n        \"value\": {\n            \"currency\": \"EUR\",\n            \"amount\": \"2.0\"\n        }\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "Get Account Balances",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "directlogin",
+						"value": "token={{token}}",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/obp/v5.1.0/banks/BancoStar/accounts/1ae7edbf-3c68-4d4b-86ce-6f06c51093a5/balances",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"obp",
+						"v5.1.0",
+						"banks",
+						"BancoStar",
+						"accounts",
+						"1ae7edbf-3c68-4d4b-86ce-6f06c51093a5",
+						"balances"
+					]
+				},
+				"description": "Obtiene los datos del balance de una cuenta bancaria de un banco especifico"
+			},
+			"response": [
+				{
+					"name": "Get Account Balances",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "directlogin",
+								"value": "token={{token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/obp/v5.1.0/banks/BancoStar/accounts/1ae7edbf-3c68-4d4b-86ce-6f06c51093a5/balances",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"obp",
+								"v5.1.0",
+								"banks",
+								"BancoStar",
+								"accounts",
+								"1ae7edbf-3c68-4d4b-86ce-6f06c51093a5",
+								"balances"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx"
+						},
+						{
+							"key": "Date",
+							"value": "Wed, 08 Nov 2023 16:53:15 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json;charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "251"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Expires",
+							"value": "Wed, 8 Nov 2023 16:53:15 GMT"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private, no-store"
+						},
+						{
+							"key": "Correlation-Id",
+							"value": "node076ndr6xrq1lt1qc49jego34nn114290"
+						},
+						{
+							"key": "Pragma",
+							"value": "no-cache"
+						},
+						{
+							"key": "ETag",
+							"value": "578264ff0f287542c50cb936d2e03c4c2df4401bdec92bd361e35f6ea3a7f80e"
+						},
+						{
+							"key": "X-Frame-Options",
+							"value": "DENY"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, OPTIONS"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "DNT,X-CustomHeader,Keep-Alive,User-Agent,X-Requested-With,If-Modified-Since,Cache-Control,Content-Type,authorization,origin,accept,client-security-token"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"account_id\": \"1ae7edbf-3c68-4d4b-86ce-6f06c51093a5\",\n    \"bank_id\": \"BancoStar\",\n    \"account_routings\": [\n        {\n            \"scheme\": \"AccountNumber\",\n            \"address\": \"Calle 246.14 # 53-19\"\n        }\n    ],\n    \"label\": \"David Vergara\",\n    \"balances\": [\n        {\n            \"type\": \"OpeningBooked\",\n            \"currency\": \"USD\",\n            \"amount\": \"4.30\"\n        }\n    ]\n}"
+				}
+			]
+		}
+	]
+}
